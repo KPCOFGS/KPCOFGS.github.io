@@ -620,7 +620,10 @@ button {
     word-wrap: break-word;
     /* Wrap long words */
 }
-
+.thick-line:hover{
+text-decoration: underline;
+text-decoration-thickness: 3px;
+}
 @media (min-width: 1024px) {
     .lg\:grid-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
