@@ -1,7 +1,12 @@
+:root {
+    --text-scale: 0.20rem;
+    /* Define a variable for text scale */
+}
+/* Apply the variable to all text elements */
 *,
 *:before,
 *:after {
-    font-size: calc(1.2rem);
+    font-size: calc(1rem + var(--text-scale));
     /* Increase all font sizes by 0.25rem */
 }
 html {
@@ -22,7 +27,8 @@ body {
 h1,
 h2,
 h3,
-h4{
+h4,
+h5 {
     font-size: inherit;
     font-weight: inherit;
 }
@@ -30,14 +36,63 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
+b {
+    font-weight: bolder;
+}
+code,
+kbd {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        Liberation Mono, Courier New, monospace;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    font-size: 1em;
+}
+input,
+optgroup {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+:-moz-focusring {
+    outline: auto;
+}
+:-moz-ui-invalid {
+    box-shadow: none;
+}
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto;
+}
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+blockquote,
+dd,
+dl,
 h1,
 h2,
 h3,
 h4,
+h5,
 p
 {
     margin: 0;
 }
+menu,
 ol,
 ul {
     list-style: none;
@@ -66,6 +121,9 @@ ul {
     --ring: 224 71.4% 4.1%;
     --radius: 0.5rem;
 }
+.relative {
+    position: relative;
+}
 .left-\[50\%\] {
     left: 50%;
 }
@@ -92,6 +150,16 @@ ul {
 .inline-flex {
     display: inline-flex;
 }
+.grid {
+    display: grid;
+}
+.hidden {
+    display: none;
+}
+.size-28 {
+    width: 7rem;
+    height: 7rem;
+}
 .size-4 {
     width: 1rem;
     height: 1rem;
@@ -103,8 +171,17 @@ ul {
 .w-\[100px\] {
     width: 100px;
 }
+.w-full {
+    width: 100%;
+}
 .max-w-2xl {
     max-width: 52rem;
+}
+.flex-1 {
+    flex: 1 1 0%;
+}
+.shrink-0 {
+    flex-shrink: 0;
 }
 .translate-x-\[-50\%\] {
     --tw-translate-x: -50%;
@@ -115,6 +192,13 @@ ul {
 }
 .translate-y-\[-50\%\] {
     --tw-translate-y: -50%;
+}
+.scroll-my-12 {
+    scroll-margin-top: 3rem;
+    scroll-margin-bottom: 3rem;
+}
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .flex-col {
     flex-direction: column;
@@ -132,7 +216,7 @@ ul {
     gap: 0.25rem;
 }
 .gap-1\
-{
+ .gap-3 {
     gap: 0.75rem;
 }
 .gap-x-1 {
@@ -162,11 +246,21 @@ ul {
     margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
+.whitespace-nowrap {
+    white-space: nowrap;
+}
 .rounded-lg {
     border-radius: var(--radius);
 }
 .rounded-md {
     border-radius: calc(var(--radius) - 2px);
+}
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+.rounded-t-\[10px\] {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .border {
     border-width: 1px;
@@ -174,6 +268,9 @@ ul {
 .py-0\.5 {
     padding-top: 0.125rem;
     padding-bottom: 0.125rem;
+}
+.border-input {
+    border-color: hsl(var(--input));
 }
 .border-muted {
     border-color: hsl(var(--muted));
@@ -201,7 +298,8 @@ ul {
     padding-bottom: 0;
 }
 .py-0\
-{
+ .py-1\
+ .pt-1 {
     padding-top: 0.25rem;
 }
 .align-middle {
@@ -238,6 +336,10 @@ ul {
     font-size: 0.85rem;
     line-height: 1.25rem;
 }
+.text-xsl {
+    font-size: 0.77rem;
+    line-height: 1rem;
+}
 .text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -266,6 +368,9 @@ ul {
 .hover\:bg-primary\/60:hover {
   background-color: orange; /* Change to the desired orange color */
 }
+.underline {
+    text-decoration-line: underline;
+}
 .shadow-2xl,
 .hover\:bg-accent:hover {
     background-color: hsl(var(--accent));
@@ -291,6 +396,9 @@ ul {
 }
 .hover\:text-accent-foreground:hover {
     color: hsl(var(--accent-foreground));
+}
+.hover\:underline:hover {
+    text-decoration-line: underline;
 }
 .hover\:opacity-100:hover {
     opacity: 1;
@@ -323,4 +431,9 @@ ul {
 .thick-line:hover{
 text-decoration: underline;
 text-decoration-thickness: 3px;
+}
+@media (min-width: 1024px) {
+    .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
