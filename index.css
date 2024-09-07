@@ -161,8 +161,8 @@ ul {
     height: 7rem;
 }
 .size-4 {
-    width: 1rem;
-    height: 1rem;
+    width: 0.9rem;
+    height: 0.9rem;
 }
 .size-8 {
     width: 2rem;
@@ -223,10 +223,14 @@ ul {
     -moz-column-gap: 0.25rem;
     column-gap: 0.25rem;
 }
-.gap-x-1\
+
 .gap-x-2 {
     -moz-column-gap: 0.5rem;
     column-gap: 0.5rem;
+}
+.gap-x-3 {
+    -moz-column-gap: 4rem;
+    column-gap: 4rem;
 }
 .gap-y-3 {
     row-gap: 0.75rem;
