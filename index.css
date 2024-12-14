@@ -387,9 +387,7 @@ ul {
 .text-secondary-foreground {
     color: hsl(var(--secondary-foreground));
 }
-.hover\:bg-primary\/60:hover {
-  background-color: orange; /* Change to the desired orange color */
-}
+
 .underline {
     text-decoration-line: underline;
 }
