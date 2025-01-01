@@ -9,14 +9,8 @@
 html {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
-  font-family:
-    ui-sans-serif,
-    system-ui,
-    sans-serif,
-    Apple Color Emoji,
-    Segoe UI Emoji,
-    Segoe UI Symbol,
-    Noto Color Emoji;
+  font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-feature-settings: normal;
   font-variation-settings: normal;
   -webkit-tap-highlight-color: transparent;
@@ -100,12 +94,6 @@ ul {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-.mt-2 {
-  margin-top: 0.5rem;
-}
-.mt-auto {
-  margin-top: auto;
 }
 .flex {
   display: flex;
@@ -199,9 +187,6 @@ ul {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
 }
-.border-muted {
-  border-color: hsl(var(--muted));
-}
 .border-transparent {
   border-color: transparent;
 }
@@ -227,7 +212,7 @@ ul {
   padding-top: 0;
   padding-bottom: 0;
 }
-.text-2xl {
+.text-xl {
   font-size: 1.55rem;
   line-height: 2rem;
 }
@@ -245,16 +230,9 @@ ul {
   font-size: 0.95rem;
   line-height: 1.75rem;
 }
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-.text-se {
-  font-size: 0.8rem;
-  line-height: 0.5rem;
-}
 .text-sl {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
+  line-height: 1rem;
 }
 .text-xs {
   font-size: 0.75rem;
@@ -268,12 +246,6 @@ ul {
 }
 .leading-none {
   line-height: 1;
-}
-.text-card-foreground {
-  color: hsl(var(--card-foreground));
-}
-.text-muted-foreground {
-  color: #353130;
 }
 .hover\:bg-accent:hover {
   background-color: hsl(var(--accent));
@@ -309,4 +281,12 @@ ul {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+.section-title {
+  color: #cd8b00;
+}
+.inline-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
