@@ -277,11 +277,6 @@ ul {
   max-width: 100%;
   word-wrap: break-word;
 }
-@media (min-width: 1024px) {
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
 .section-title {
   color: #cd8b00;
 }
@@ -289,4 +284,9 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+}
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
