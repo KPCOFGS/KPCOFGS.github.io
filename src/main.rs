@@ -47,7 +47,7 @@ pub fn Hero() -> Element {
         div { class: "page",
             header { class: "hero",
                 h1 { "Shixian Sheng" }
-                p { "Computer Engineer | Data Science | Full-Stack Developer | Researcher" }
+                p { "Software Engineer | AI Developer | Full-Stack Developer | Researcher" }
                 div { class: "button-group",
                     a { class: "btn", href: "https://github.com/KPCOFGS", "GitHub" }
                     a { class: "btn", href: "https://linkedin.com/in/shixian-sheng", "LinkedIn" }
