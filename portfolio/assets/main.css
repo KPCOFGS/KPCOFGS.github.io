@@ -1,0 +1,219 @@
+/* JetBrains Mono Nerd Font self-hosted */
+@font-face {
+    font-family: "JetBrains Mono Nerd";
+    src: url("/assets/fonts/JetBrainsMonoNerd-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "JetBrains Mono Nerd";
+    src: url("/assets/fonts/JetBrainsMonoNerd-Medium.ttf") format("ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "JetBrains Mono Nerd";
+    src: url("/assets/fonts/JetBrainsMonoNerd-Bold.ttf") format("ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "JetBrains Mono Nerd", monospace;
+    background: #020617;
+    color: #e2e8f0;
+}
+
+.page {
+    min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero p {
+    opacity: 0.9;
+    margin-top: 0.5rem;
+}
+
+.button-group {
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 10px 16px;
+    margin: 0 6px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background: #1e293b;
+}
+
+/* MAIN */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* CARDS */
+.card {
+    background: #0f172a;
+    border-radius: 20px;
+    padding: 1.5rem;
+    border: 1px solid #1e293b;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.section-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+/* LINKS */
+.link {
+    color: #818cf8;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 0.4rem;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge {
+    background: #1e293b;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+/* Contact improvements */
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-label {
+    font-weight: 600;
+    color: #818cf8;
+    min-width: 80px;
+}
+
+.contact-link {
+    color: #e2e8f0;
+    text-decoration: underline;
+    transition: 0.2s ease;
+}
+
+.contact-link:hover {
+    color: #c4b5fd;
+    text-decoration: none;
+}
+.project-title {
+    text-decoration: none; /* remove underline */
+    color: #818cf8; /* optional: keep the same link color */
+    font-weight: 600; /* optional: make it stand out */
+}
+
+.project-title:hover {
+    color: #a5b4fc; /* optional: subtle hover effect */
+}
+/* EXPERIENCE SECTION */
+.experience-item {
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    background: #0f172a; /* slightly lighter than page background for contrast */
+    border-radius: 16px;
+    border: 1px solid #1e293b; /* subtle card border */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.experience-item strong {
+    color: #818cf8; /* standout color for role title */
+    font-size: 1rem;
+}
+
+.experience-item .company {
+    font-size: 0.92rem; /* smaller text for bullets */
+    color: #a5b4fc; /* softer complementary color for company */
+    font-weight: 600;
+}
+
+.experience-item .duration-location {
+    font-size: 0.87rem; /* smaller text for bullets */
+    color: #cbd5e1; /* muted light color for dates and location */
+}
+
+.experience-item ul li {
+    font-size: 0.95rem; /* smaller text for bullets */
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    color: #e2e8f0; /* main text color */
+}
+/* CONTACT SECTION */
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-label {
+    font-weight: 600;
+    color: #818cf8; /* accent color for label */
+}
+
+.contact-link {
+    text-decoration: none; /* remove underline */
+    color: #a5b4fc; /* lighter accent color for links */
+    transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+    color: #c4b5fd; /* subtle hover color change */
+}
