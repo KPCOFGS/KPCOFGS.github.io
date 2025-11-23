@@ -133,7 +133,7 @@ pub fn Hero() -> Element {
                     br {}
                     // Personal Portfolio Website
                     div { class: "project-card",
-                        a { href: "https://github.com/KPCOFGS/portfolio", class: "project-title link", "Personal Portfolio Website" }
+                        a { href: "https://github.com/KPCOFGS/KPCOFGS.github.io", class: "project-title link", "Personal Portfolio Website" }
                         p { "Designed and implemented this personal portfolio website using Rust and Dioxus for WebAssembly." }
                         p { "Integrated responsive layout, dark theme, custom CSS styling, and self-hosted JetBrains Mono Nerd Font." }
                         p { "Highlights experience in full-stack development, WASM web deployment, and modern UI design principles." }
