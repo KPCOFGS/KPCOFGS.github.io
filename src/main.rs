@@ -42,7 +42,7 @@ pub fn Hero() -> Element {
         "HTML/CSS",
         "ESRI APIs",
     ];
-    let portfolio_skills = ["Rust", "Dioxus", "WebAssembly", "HTML/CSS", "JS (optional)"];
+    let portfolio_skills = ["Rust", "Dioxus", "WebAssembly", "HTML/CSS"];
     rsx! {
         div { class: "page",
             header { class: "hero",
@@ -140,6 +140,7 @@ pub fn Hero() -> Element {
                         div { class: "skills",
                             { portfolio_skills.iter().map(|skill| rsx! { span { class: "badge", "{skill}" } }) }
                         }
+                        hr {}
                     }
                 }
 
